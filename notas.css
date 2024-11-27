@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+
+    --background-container-gravacao: rgba(255, 255, 255, 0.3);
+    --background-card: rgba(255, 255, 255, 0.705);
+    --background-bts-editar-parar: rgba(197, 196, 196, 0.281);
+    --background-button-gravar: #f9dba6;
+    --background-button-hover-gravar: #fdd99a;
+    --background-button-parar: #eec9ba;
+    --background-button-hover-parar: #fac2ac;
+
+    --color-h2: #3d578b;
+    --color-texto-card: #9db6f8;
+    --color-buttons: #30508f;
+    --color-button-hover: rgb(155, 155, 154);
+}
+
+body {
+    background: url("./imagens/fundo-notas.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-family: "Matemasie", sans-serif;
+    font-style: normal;
+}
+
+main {
+    /*border: 1px solid red;*/
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 100%;
+}
+
+.container-gravacao {
+    /*border: 1px solid blue;*/
+    background-color: var(--background-container-gravacao);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    padding: 10px;
+}
+
+h2 {
+    font-family: "Atma", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 55px;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    color: var(--color-h2);
+    text-shadow: 2px 2px 3px #FAEBD7;
+    text-align: center;
+}
+
+.h2 {
+    width: 60%;
+}
+
+
+#gravar,
+#parar {
+    border-radius: 20px;
+    width: 300px;
+    height: 40px;
+    border: none;
+    color: var(--color-buttons);
+    font-size: 16px;
+    display: block;
+    margin: 20px;
+}
+
+#gravar {
+    background-color: var(--background-button-gravar);
+}
+
+#gravar:hover {
+    cursor: pointer;
+    background-color: var(--background-button-hover-gravar);
+    color: var(--color-button-hover);
+}
+
+#parar {
+    background-color: var(--background-button-parar);
+}
+
+#parar:hover {
+    cursor: pointer;
+    background-color: var(--background-button-hover-parar);
+    color: var(--color-button-hover);
+}
+
+
+.img-seta {
+    position: absolute;
+    bottom: 0;
+    left: 2%;
+}
+
+.container-cards {
+    /*border: 1px solid green;*/
+    display: flex;
+    flex-wrap: wrap;
+    /*quebra linha*/
+    gap: 10px;
+    padding: 25px;
+    overflow-y: auto;
+    /*cria um scroll automatico*/
+}
+
+.card {
+    background-color: var(--background-card);
+    color: black;
+    width: 350px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    border: 10px;
+
+    font-family: "Playpen Sans", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+    color: var(--color-texto-card);
+}
+
+.bt-card {
+    text-align: end;
+}
+
+#editar,
+#excluir {
+    width: 30px;
+    margin: 5px;
+    height: 30px;
+    background-color: var(--background-bts-editar-parar);
+    border-color: rgba(255, 255, 255, 0.452);
+    border-radius: 50%;
+}

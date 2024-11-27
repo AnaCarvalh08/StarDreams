@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-letras-lista: #f5d76ae3;
+    --cor-h1: #3d578b;
+    --cor-h2: #3d578b;
+}
+
+body {
+    background-image: url(./imagens/instrucoes-fundo.png);
+    overflow: hidden;
+}
+
+.img-ilustrativa {
+    position: absolute;
+    top: 20%;
+    right: 60%;
+}
+
+.titulos {
+    position: absolute;
+    top: 3%;
+    right: 20%;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Atma", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-size: 55px;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+
+    color: var(--cor-h2);
+    text-shadow: 2px 2px 3px #FAEBD7;
+}
+
+h1 {
+
+    font-family: "DynaPuff", serif;
+    font-optical-sizing: auto;
+    font-size: 55px;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+
+    color: var(--cor-h1);
+    text-shadow: 2px 2px 3px #FAEBD7
+}
+
+.lista {
+    position: absolute;
+    width: 40%;
+    top: 28%;
+    right: 10%;
+    text-align: left;
+
+}
+
+ul {
+    list-style-type: none;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 29px;
+
+
+    color: #f8dc3e;
+    /* Amarelo dourado */
+    text-shadow: 2px 2px 4px #3A2F3F;
+    /* Sombra roxa escura */
+
+}
+
+.img-seta {
+    position: absolute;
+    bottom: 0;
+    right: 2%;
+}
