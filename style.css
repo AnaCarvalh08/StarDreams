@@ -1,0 +1,37 @@
+:root {
+    --cor-principal-titulo: #f3d4d8;
+    --cor-contorno-titulo: #ee8f9ca1;
+    --sombra-titulo: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./imagens/Sonhos-fundo.png);
+}
+
+#a-paginaInicial {
+    position: absolute;
+    /* Permite o ajuste preciso da posição */
+    top: 55%;
+    /* Centraliza verticalmente */
+    left: 48.5%;
+    /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%);
+    /* Ajusta para o centro exato */
+    text-decoration: none;
+}
+
+#titulo {
+    font-family: "Coiny", system-ui;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 50px;
+    color: var(--cor-principal-titulo);
+    -webkit-text-stroke: 1px var(--cor-contorno-titulo);
+    text-shadow: var(--sombra-titulo);
+}
